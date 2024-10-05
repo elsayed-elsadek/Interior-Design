@@ -1,0 +1,27 @@
+# Viva Decor
+
+## Project Overview
+
+**Viva Decor** is a modern, responsive website that showcases home décor products. The project aims to provide users with an elegant and clean browsing experience while exploring various home décor collections. The design focuses on user-friendly navigation and a seamless interface, adapting to all screen sizes using Bootstrap.
+
+## Features
+
+- **Responsive Design**: Built using Bootstrap to ensure the website is fully responsive across devices and screen sizes.
+- **Clean and Modern UI**: Aesthetic design with a modern layout using custom CSS.
+- **FontAwesome Icons**: FontAwesome is used to enhance the UI with beautiful, scalable icons.
+- **Home Décor Showcase**: Displays a variety of décor items with categories for easy navigation.
+- **Bootstrap Components**: Utilizes Bootstrap’s grid system, buttons, navigation bars, and other UI components for a consistent design.
+
+## Technologies Used
+
+- **HTML**: Structuring the content of the pages.
+- **CSS**: Custom styling to enhance the appearance and layout.
+- **Bootstrap**: For responsive design and pre-built components.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/viva-decor.git

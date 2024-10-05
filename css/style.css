@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: "Roboto", system-ui;
+}
+.container{
+    width: 90%;
+}
+ul{
+    list-style: none;
+}
+
+:root{
+    --paragraph-color:#545454;
+    --header-color: #1F1F1F;
+}
+
+/* nav */
+.navbar .active{
+ color: var(--header-color);
+}
+.navbar a{
+    color: var(--paragraph-color);
+}
+
+@media(max-width:767px){
+    .navbar .container{
+display: grid !important;
+grid-template-columns:1fr 1fr;
+position: relative;
+    }
+    .navbar .links {
+    flex-direction: column;
+    align-items: flex-end;
+
+    }
+    nav button {
+        position: absolute;
+        top: 11rem;
+        right: 0;
+    } 
+  
+}
+
+
+/* /nav */
+
+/* intro-sec */
+.intro-sec h1 {
+    font-size:80px;
+}
+
+.intro-sec .activity h2 {
+    color: var(--paragraph-color);
+}
+.action-img {
+    position: relative;
+}
+
+.intro-sec .action-img::after{
+content: '';
+width: 120px;
+height: 100px;
+background-color: transparent;
+border: 2px solid var(--header-color);
+display: block;
+position: absolute;
+top: 0;
+z-index: -1;
+}
+.intro-sec .action-img::before{
+    content: '↓';
+justify-content: center;
+align-items: center;
+    color: #fff;
+    font-size: 50px;
+    width: 100px;
+    height: 90px;
+    background-color: var(--header-color);
+    display: flex;
+    position: absolute;
+    bottom: -5% ;
+    right: 12%;
+    z-index: 1;
+    }
+    @media(max-width:1024px){
+        .intro-sec h1 {
+            font-size: 66px;
+        }
+        .intro-sec img {
+         height: 80% !important;
+        }
+        .intro-sec .action-img::before {
+         bottom: 15%;
+        }
+    }
+    @media(max-width:767px){
+        .intro-sec p{
+            width: 100% !important;
+        }
+        
+    }
+@media(max-width:500px){
+    .intro-sec h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .intro-sec .action-img img{
+       width: 90% !important;
+    }
+    .intro-sec .action-img::before {
+        display: none;
+    }
+   
+}
+/* /intro-sec */
+
+/* our-services */
+.our-services h1 span{
+  content: '';
+    width: 55px;
+    height: 2px;
+    background-color: var(--header-color);
+    display: block;
+}
+.our-services h6{
+    padding-bottom: 10px;
+  border-bottom: 1px solid #DADADA;
+}
+.our-services h6 span{
+    cursor: pointer;
+}
+@media(max-width:1024px){
+    .our-services img {
+        width: 100% !important;
+        padding-bottom: 15px;
+    }
+}
+@media(max-width:480px){
+    .our-services .info {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+}
+/* /our-services */
+
+/* testimonial */
+.testimonial .container{
+    position: relative;
+}
+
+.testimonial .users{
+    position: absolute;
+    top: 24%;
+    left: 18%;
+}
+.testimonial .arrow-icons i{
+    background-color: #F1F1F1;
+cursor: pointer;
+}
+.testimonial .location{
+    color: var(--paragraph-color);
+}
+.user-testimontial h1 {
+font-size: 100px;
+height: 50px;
+}
+.testimonial .user-info img {
+    width: 50px;
+    height: 50px;
+}
+@media(max-width:1024px){
+.testimonial .row .mask-group-img ,
+.testimonial .user1{
+        display: none;
+}
+.testimonial .users {
+    position: static;
+    justify-items: center;
+    display: grid !important;
+    margin: 20px 0;
+}
+.testimonial .row {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.testimonial .mask-group {
+    width: 50rem;
+}
+.testimonial .arrow-icons {
+    justify-content: center;
+}
+}
+@media(max-width:481px){
+    .user-testimontial p{
+        font-size: 14px;
+    }
+    .user-testimontial h6 {
+        font-size: 15px;
+    }
+}
+
+/* /testimonial */
+
+/* subscribe */
+.subscribe-btn {
+    margin-top: 100px;
+    position: relative;
+}
+.subscribe-btn .subscribe-input{
+    position: absolute;
+    top: -30px;
+    box-shadow: 0px 10px 100px 0px #00000024;
+z-index: 1000;
+}
+@media(max-width:480px){
+    .subscribe-btn button {
+        padding: 10px !important; 
+    }
+}
+
+/* /subscribe */
+
+/* footer */
+
+.footer p{
+    color: #D1D1D1;
+}
+.footer a {
+    background-color: var(--paragraph-color);
+    padding:  0px 5px;
+}
+/* /footer */
+
